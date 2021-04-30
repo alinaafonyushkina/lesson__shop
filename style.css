@@ -66,11 +66,90 @@ summary {
   display: flex;
 }
 
-.burger {
+.nav-overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.nav-close {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.nav-heading {
+  font-size: 14px;
+  line-height: 17px;
+  color: #F16D7F;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.nav-heading_menu {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.nav-list {
+  list-style-type: none;
+}
+
+.nav-link {
   text-decoration: none;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+  padding-left: 0;
+}
+
+.nav-item:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+  color: #F16D7F;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+.burger {
+  position: relative;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+.burger-nav {
+  position: absolute;
+  background-color: #fff;
+  width: 232px;
+  min-height: 764px;
+  margin-top: 12px;
+  padding: 20px;
+  position: absolute;
+  right: -300%;
+  top: 38px;
+  -webkit-transform: scalex(0);
+          transform: scalex(0);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#burger {
+  display: none;
+}
+
+#burger:checked ~ .burger-nav {
+  -webkit-transform: scalex(1);
+          transform: scalex(1);
 }
 
 .avatar {
@@ -127,6 +206,13 @@ summary {
   text-decoration: none;
 }
 
+.text__header:hover {
+  -webkit-transform: rotate(-360deg);
+          transform: rotate(-360deg);
+  -webkit-transition-duration: 2s;
+          transition-duration: 2s;
+}
+
 .text__brand {
   font-weight: 900;
   font-size: 48px;
@@ -170,6 +256,15 @@ summary {
   text-decoration: none;
 }
 
+.product__box:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-box-shadow: -6px 41px 23px 28px rgba(0, 0, 0, 0.23);
+          box-shadow: -6px 41px 23px 28px rgba(0, 0, 0, 0.23);
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
 .box-women {
   background-image: url(img/for__women.png);
 }
@@ -198,6 +293,15 @@ summary {
           align-items: center;
   text-decoration: none;
   margin-top: 30px;
+}
+
+.product__box__accesories:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-box-shadow: -6px 41px 23px 28px rgba(0, 0, 0, 0.23);
+          box-shadow: -6px 41px 23px 28px rgba(0, 0, 0, 0.23);
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
 }
 
 .text__product__box {
@@ -304,6 +408,12 @@ summary {
   border: none;
   outline: none;
   text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .product__btn:hover {
@@ -311,6 +421,10 @@ summary {
   background-color: #fff;
   border: 1px solid #F16D7F;
   padding: 14px 39px;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 
 .advantages {
@@ -330,6 +444,13 @@ summary {
 
 .advantages-content-item {
   text-align: center;
+}
+
+.advantages-content-item:hover {
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
 }
 
 .car__margin {
@@ -440,6 +561,8 @@ summary {
 .button__subscribe:hover {
   color: #f16d7f;
   background-color: #FFFFFF;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 
 .footer {
@@ -511,6 +634,15 @@ summary {
   line-height: 29px;
   color: #F16D7F;
   text-decoration: none;
+  display: block;
+}
+
+.navigation-header:hover {
+  -webkit-transform: scale(1.6);
+          transform: scale(1.6);
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  color: #F16D7F;
 }
 
 .navigation-list {
@@ -531,12 +663,18 @@ summary {
   line-height: 17px;
   color: #636363;
   margin-left: 8px;
+  display: block;
 }
 
 .navigation-li:hover {
   color: #F16D7F;
+  font-weight: bold;
   font-size: 14px;
   line-height: 17px;
+  -webkit-transform: scale(1.6);
+          transform: scale(1.6);
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
 }
 
 .dash {
@@ -779,6 +917,14 @@ summary {
   margin-top: 20px;
 }
 
+.fa-close:hover {
+  -webkit-transform: scale(1.6);
+          transform: scale(1.6);
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  color: #EF5B70;
+}
+
 .product-cart-buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -801,6 +947,10 @@ summary {
 
 .product-cart-button:hover {
   background-color: #A4A4A4;
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
 
 .product-input-form-cart {
@@ -844,6 +994,10 @@ summary {
 
 .product-input-form-button:hover {
   background-color: #A4A4A4;
+  -webkit-box-shadow: -2px 40px 31px -10px rgba(34, 60, 80, 0.15);
+          box-shadow: -2px 40px 31px -10px rgba(34, 60, 80, 0.15);
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
 }
 
 .product-checkout {
@@ -898,6 +1052,12 @@ summary {
   color: #F16D7F;
   border: 1px solid #F16D7F;
   padding: 14px 39px;
+  -webkit-transform: translateY(-10%);
+          transform: translateY(-10%);
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-box-shadow: -2px 40px 31px -10px rgba(34, 60, 80, 0.15);
+          box-shadow: -2px 40px 31px -10px rgba(34, 60, 80, 0.15);
 }
 
 .cart-fon {
@@ -982,6 +1142,10 @@ summary {
 
 .cart-info-add:hover {
   background-color: #ebe5e5;
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
 
 .cart-info-button-img {
@@ -1081,6 +1245,10 @@ summary {
   background-color: #FFFFFF;
   border: 1px solid #F16D7F;
   padding: 15px 29px;
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
 
 .benefit {
