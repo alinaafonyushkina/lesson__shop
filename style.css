@@ -247,7 +247,7 @@ summary {
 
 .product__box {
   display: block;
-  width: 360px;
+  width: 32%;
   height: 260px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -459,7 +459,7 @@ summary {
   color: #FFFFFF;
   background-color: #F16D7F;
   padding: 15px 40px;
-  border: none;
+  border: 1px solid transparent;
   outline: none;
   text-decoration: none;
   display: -webkit-box;
@@ -474,7 +474,6 @@ summary {
   color: #F16D7F;
   background-color: #fff;
   border: 1px solid #F16D7F;
-  padding: 14px 39px;
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
   -webkit-transform: rotateY(180deg);
@@ -632,6 +631,9 @@ summary {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer__copy {
@@ -661,6 +663,7 @@ summary {
   background-color: #fff;
   text-decoration: none;
   color: #000000;
+  padding: 8px 8px;
 }
 
 .social__list:hover {
@@ -946,10 +949,15 @@ summary {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 40px;
+  -webkit-box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+          box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+  background-image: url(img/product__cart2.png);
+  background-repeat: no-repeat;
+  min-height: 300px;
 }
 
 .product-cart-info {
-  margin-left: 32px;
+  margin-left: 300px;
 }
 
 .product-cart-info-header {
@@ -962,6 +970,7 @@ summary {
 .product-cart-info-list {
   list-style-type: none;
   margin-top: 40px;
+  margin-bottom: 0;
 }
 
 .product-cart-info-li {
@@ -982,13 +991,22 @@ summary {
   color: #6F6E6E;
 }
 
-.product-cart-info-li-number {
-  display: inline-block;
+.input-quantity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 32px;
+}
+
+.product-cart-info-quantity {
+  outline: none;
   font-size: 18px;
   line-height: 22px;
   color: #656565;
   border: 1px solid #EAEAEA;
   padding: 1px 16px;
+  margin-left: 24px;
+  width: 44px;
 }
 
 .product-cart-close {
@@ -996,6 +1014,7 @@ summary {
   color: #575757;
   margin-right: 20px;
   margin-top: 20px;
+  display: block;
 }
 
 .fa-close:hover {
@@ -1171,6 +1190,10 @@ summary {
   margin-top: -50px;
 }
 
+.cart-info-header {
+  padding: 15px;
+}
+
 .cart-info-header-mini {
   display: block;
 }
@@ -1181,7 +1204,7 @@ summary {
   line-height: 17px;
   text-align: center;
   color: #5E5E5E;
-  width: 555px;
+  width: 34%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -1250,6 +1273,7 @@ summary {
   margin-top: 44px;
   margin-right: 128px;
   margin-bottom: 96px;
+  width: 50%;
 }
 
 .registration-form-header {
@@ -1276,7 +1300,7 @@ summary {
   font-size: 13px;
   line-height: 16px;
   color: #B1B1B1;
-  padding: 13px 300px 16px 17px;
+  padding: 13px;
 }
 
 .registraition-radio {
@@ -1334,6 +1358,7 @@ summary {
 
 .benefit {
   margin-top: 64px;
+  width: 50%;
 }
 
 .benefit-header {
@@ -1371,7 +1396,7 @@ summary {
     width: 920px;
   }
   .product__box {
-    width: 232px;
+    width: 32%;
     height: 167px;
   }
   .advantages-content {
@@ -1414,14 +1439,43 @@ summary {
   .filters-categories {
     margin-left: 175px;
   }
+  .product-page {
+    display: block;
+  }
+  .product-cart-close {
+    margin-left: 350px;
+  }
+  .product-input-form {
+    margin-top: 64px;
+  }
+  .product-page-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .video {
+    width: 900px;
+  }
 }
 
 @media all and (max-width: 1000px) {
   .container {
     width: 734px;
   }
+  .promo {
+    height: 363px;
+  }
+  .promo-container {
+    background-image: url(img/promo-index-planshet.png);
+    background-repeat: no-repeat;
+    background-position-x: -50px;
+    background-position-y: 195px;
+  }
   .product__box {
-    width: 220px;
+    width: 32%;
     height: 167px;
   }
   .products__holders {
@@ -1476,22 +1530,37 @@ summary {
   .filters-categories {
     position: absolute;
   }
+  .product-page-left {
+    display: block;
+  }
+  .product-cart-close {
+    margin-left: 150px;
+  }
+  .video {
+    width: 700px;
+  }
+}
+
+@media all and (max-width: 929px) {
+  .product__box {
+    width: 32%;
+  }
 }
 
 @media all and (max-width: 768px) {
   .container {
     width: 343px;
   }
+  .promo-container {
+    background-image: none;
+  }
+  .promo {
+    height: 363px;
+  }
   .product__box {
     width: 343px;
     height: 247px;
     margin-bottom: 20px;
-  }
-  .text__header {
-    color: white;
-  }
-  .text__brand {
-    color: white;
   }
   .advantages-content {
     display: -webkit-box;
@@ -1572,6 +1641,70 @@ summary {
   }
   .feetback__form {
     width: 400px;
+  }
+  .registraition {
+    display: block;
+  }
+  .registration-form {
+    width: 100%;
+  }
+  .benefit {
+    margin-top: 64px;
+    width: 100%;
+  }
+  .feetback__form {
+    width: 350px;
+  }
+  .button__subscribe {
+    font-size: 12px;
+  }
+  .video {
+    width: 350px;
+  }
+  .product-cart {
+    background-image: url(img/product-img-mobile1.png);
+    background-repeat: no-repeat;
+    min-height: 188px;
+  }
+  .product-cart-info-header {
+    font-size: 12px;
+    margin-top: 0;
+    font-weight: bold;
+  }
+  .product-cart-info-list {
+    margin-top: 0;
+    padding: 0;
+  }
+  .product-cart-info-li {
+    font-size: 10px;
+  }
+  .product-cart-info-li-price {
+    font-size: 10px;
+  }
+  .product-cart-info-li-filtr {
+    font-size: 10px;
+  }
+  .product-cart-info-quantity {
+    font-size: 10px;
+    padding: 0px 8px;
+    margin-left: 12px;
+    width: 24px;
+  }
+  .product-cart-info {
+    margin-left: 150px;
+  }
+  .product-cart-close {
+    margin-left: 30px;
+  }
+  .input-quantity {
+    margin-left: 0;
+  }
+  .product-cart-button {
+    font-size: 12px;
+    padding: 10px;
+  }
+  .feetback__content__wright__text {
+    margin-top: 50px;
   }
 }
 /*# sourceMappingURL=style.css.map */
