@@ -1,0 +1,3 @@
+Проверила страницы на валидность. Исправила. Только не поняла как исправить ошибку "The value of the for attribute of the label element must be the ID of a non-hidden form control." 
+Добавила кнопке "Browse all product" путь к странице catalog.
+Добавила на всех страницах выпадающий список menu. Только на странице registration почему-то внутри соскочили отступы.

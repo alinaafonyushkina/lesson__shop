@@ -19,10 +19,40 @@
             <div class="header__content">
                 <div class="header__content__left">
                     <a href="index.html" target="_blank" class="logo"><img src="img/logo.png" alt="logo"></a>
-                    <a href="#" class="search"><img src="img/search.png" alt="search"></i></a>
+                    <a href="#" class="search"><img src="img/search.png" alt="search"></a>
                 </div>
                 <nav class="header__content__wright">
-                    <a href="#" class="burger"><img src="img/burger.png" alt="burger"></a>
+                    <div class="burger">
+                        <input type="checkbox" id="burger">
+                        <label class="burger-btn" for="burger"><img src="img/burger.png" alt="burger"></label>
+                        <nav class="burger-nav">
+                            <div class="nav-overlay">
+                                <label class="nav-close" for="burger"><i class="fa fa-close"></i></label>
+                                <p class="nav-heading_menu">Menu</p>
+                                <p class="nav-heading">Men</p>
+                                <ul class="nav-list">
+                                    <li class="nav-item"><a class="nav-link" href="#">Accessories</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Bags</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Denim</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">T-Shirts</a></li>
+                                </ul>
+                                <p class="nav-heading">WOMAN</p>
+                                <ul class="nav-list">
+                                    <li class="nav-item"><a class="nav-link" href="#">Accessories</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Bags</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Denim</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">T-Shirts</a></li>
+                                </ul>
+                                <p class="nav-heading">KIDS</p>
+                                <ul class="nav-list">
+                                    <li class="nav-item"><a class="nav-link" href="#">Accessories</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Bags</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Denim</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">T-Shirts</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
                     <a href="regisration.html" class="avatar"><img src="img/avatar.png" alt="avatar"></a>
                     <a href="#" class="basket"><img src="img/basket.png" alt="basket"></a>
                 </nav>
@@ -54,7 +84,7 @@
                             </ul>
                             <div class="input-quantity">
                                 <label class="product-cart-info-li">Quantity: </label>
-                                <input type="text" placeholder="2" class="product-cart-info-quantity">
+                                <input type="number" placeholder="2" class="product-cart-info-quantity">
                             </div>
                         </div>
 
@@ -80,7 +110,7 @@
                             </ul>
                             <div class="input-quantity">
                                 <label class="product-cart-info-li">Quantity: </label>
-                                <input type="text" placeholder="2" class="product-cart-info-quantity">
+                                <input type="number" placeholder="2" class="product-cart-info-quantity">
                             </div>
                         </div>
 
