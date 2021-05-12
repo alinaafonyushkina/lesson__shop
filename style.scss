@@ -4,6 +4,10 @@
 }
 body{
     font-family: 'Lato', sans-serif;
+    min-height: 100vh;
+}
+main{
+    flex-grow: 1;
 }
 .container{
     width: 1140px;
@@ -39,10 +43,49 @@ summary{
     text-decoration: none;
     margin-right: 40px;
 }
+.logo:hover{
+	-webkit-animation: rotate-scale-up 0.65s linear both;
+	        animation: rotate-scale-up 0.65s linear both;
+}
+@-webkit-keyframes rotate-scale-up {
+    0% {
+      -webkit-transform: scale(1) rotateZ(0);
+              transform: scale(1) rotateZ(0);
+    }
+    50% {
+      -webkit-transform: scale(2) rotateZ(180deg);
+              transform: scale(2) rotateZ(180deg);
+    }
+    100% {
+      -webkit-transform: scale(1) rotateZ(360deg);
+              transform: scale(1) rotateZ(360deg);
+    }
+  }
+  @keyframes rotate-scale-up {
+    0% {
+      -webkit-transform: scale(1) rotateZ(0);
+              transform: scale(1) rotateZ(0);
+    }
+    50% {
+      -webkit-transform: scale(2) rotateZ(180deg);
+              transform: scale(2) rotateZ(180deg);
+    }
+    100% {
+      -webkit-transform: scale(1) rotateZ(360deg);
+              transform: scale(1) rotateZ(360deg);
+    }
+  }
+  
+
 .search{
     text-decoration: none;
     align-self: center;
 }
+.search:hover{
+    transform: scale(1.25);
+    transition-duration: 0.3s;
+}
+
 .header__content__wright{
     display: flex;    
 }
@@ -88,10 +131,15 @@ summary{
 .burger{
     position: relative;
     align-self: center;
+    z-index: 1;
 
 }
 .burger-btn{
     cursor: pointer;
+}
+.burger-btn:hover{
+    transform: scale(1.25);
+    transition-duration: 0.3s;
 }
 .burger-nav{
     position: absolute;
@@ -120,9 +168,17 @@ summary{
     align-self: center;
     text-decoration: none;
 }
+.avatar:hover{
+    transform: scale(1.25);
+    transition-duration: 0.3s;
+}
 .basket{
     text-decoration: none;
     align-self: center;
+}
+.basket:hover{
+    transform: scale(1.25);
+    transition-duration: 0.3s;
 }
 
 
@@ -881,7 +937,32 @@ summary{
     padding-top: 11px;
     padding-bottom: 30px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.cart-fon-img{
+    width: 100%;
+}
+.cart-fa-angle-left{
+    color: black;
+    padding: 8px 12px;
+    background-color: rgba(42, 42, 42, 0.15);
+}
+.cart-fa-angle-left:hover{
+    transform: scale(1.25);
+    transition-duration: 0.4s;
+    color: #F16D7F;
+}
+.cart-fa-angle-right{
+    color: black;
+    padding: 8px 12px;
+    background-color: rgba(42, 42, 42, 0.15);
+}
+.cart-fa-angle-right:hover{
+    transform: scale(1.25);
+    transition-duration: 0.4s;
+    color: #F16D7F;
 }
 .cart-info{
     background: #FFFFFF;
